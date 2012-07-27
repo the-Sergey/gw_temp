@@ -1,6 +1,15 @@
+/* line 1, c:/gw_temp/sass/etc.scss */
+#wrapper {
+  width: 1002px;
+  margin: 0 auto;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
 /* Header
 -----------------------------------------------------------------------------*/
-/* line 3, c:/gw_temp/sass/etc.scss */
+/* line 10, c:/gw_temp/sass/etc.scss */
 #header {
   height: 150px;
   background: #FFE680;
@@ -8,7 +17,7 @@
 
 /* Middle
 -----------------------------------------------------------------------------*/
-/* line 9, c:/gw_temp/sass/etc.scss */
+/* line 16, c:/gw_temp/sass/etc.scss */
 #middle {
   width: 100%;
   padding: 0 0 100px;
@@ -16,7 +25,7 @@
   position: relative;
 }
 
-/* line 15, c:/gw_temp/sass/etc.scss */
+/* line 22, c:/gw_temp/sass/etc.scss */
 #middle:after {
   content: '.';
   display: block;
@@ -25,21 +34,21 @@
   height: 0;
 }
 
-/* line 22, c:/gw_temp/sass/etc.scss */
+/* line 29, c:/gw_temp/sass/etc.scss */
 #container {
   width: 100%;
   float: left;
   overflow: hidden;
 }
 
-/* line 27, c:/gw_temp/sass/etc.scss */
+/* line 34, c:/gw_temp/sass/etc.scss */
 #content {
   padding: 0 270px 0 270px;
 }
 
 /* Sidebar Left
 -----------------------------------------------------------------------------*/
-/* line 33, c:/gw_temp/sass/etc.scss */
+/* line 40, c:/gw_temp/sass/etc.scss */
 #sideLeft {
   float: left;
   width: 250px;
@@ -50,7 +59,7 @@
 
 /* Sidebar Right
 -----------------------------------------------------------------------------*/
-/* line 43, c:/gw_temp/sass/etc.scss */
+/* line 50, c:/gw_temp/sass/etc.scss */
 #sideRight {
   float: left;
   margin-right: -3px;
@@ -62,7 +71,7 @@
 
 /* Footer
 -----------------------------------------------------------------------------*/
-/* line 54, c:/gw_temp/sass/etc.scss */
+/* line 61, c:/gw_temp/sass/etc.scss */
 #footer {
   width: 1002px;
   margin: -100px auto 0;
