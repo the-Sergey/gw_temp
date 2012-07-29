@@ -6,7 +6,8 @@
 @import "variables.scss"; // Modify this for custom colors, font-sizes, etc
 @import "mixins.scss";
 
-@import "etc.scss";
+// Grid system and page structure
+@import "scaffolding.scss";
 
 // Base CSS
 @import "type.scss";

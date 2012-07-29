@@ -1,0 +1,93 @@
+/* line 4, c:/gw_temp/sass/scaffolding.scss */
+html {
+  height: 100%;
+}
+
+/* line 7, c:/gw_temp/sass/scaffolding.scss */
+body {
+  font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 12, c:/gw_temp/sass/scaffolding.scss */
+#wrapper {
+  width: 1002px;
+  margin: 0 auto;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+/* line 21, c:/gw_temp/sass/scaffolding.scss */
+#header {
+  height: 150px;
+  background: #FFE680;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+/* line 27, c:/gw_temp/sass/scaffolding.scss */
+#middle {
+  width: 100%;
+  padding: 0 0 100px;
+  height: 1%;
+  position: relative;
+}
+
+/* line 33, c:/gw_temp/sass/scaffolding.scss */
+#middle:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+/* line 40, c:/gw_temp/sass/scaffolding.scss */
+#container {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+/* line 45, c:/gw_temp/sass/scaffolding.scss */
+#content {
+  padding: 0 270px 0 270px;
+}
+
+/* Sidebar Left
+-----------------------------------------------------------------------------*/
+/* line 51, c:/gw_temp/sass/scaffolding.scss */
+#sideLeft {
+  float: left;
+  width: 250px;
+  margin-left: -100%;
+  position: relative;
+  background: #B5E3FF;
+}
+
+/* Sidebar Right
+-----------------------------------------------------------------------------*/
+/* line 61, c:/gw_temp/sass/scaffolding.scss */
+#sideRight {
+  float: left;
+  margin-right: -3px;
+  width: 250px;
+  margin-left: -250px;
+  position: relative;
+  background: #FFACAA;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+/* line 72, c:/gw_temp/sass/scaffolding.scss */
+#footer {
+  width: 1002px;
+  margin: -100px auto 0;
+  height: 100px;
+  background: #BFF08E;
+  position: relative;
+}
