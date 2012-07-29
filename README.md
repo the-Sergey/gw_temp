@@ -1,4 +1,6 @@
 gw_temp
 =======
 
-gw template
+Welcome to GW template.
+
+Have a nice day!
