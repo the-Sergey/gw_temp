@@ -1,13 +1,16 @@
+/*CSS Reset*/
 
-// CSS Reset
 @import "reset.scss";
 
 // Core variables and mixins
+
 @import "variables.scss"; // Modify this for custom colors, font-sizes, etc
 @import "mixins.scss";
 
-// Grid system and page structure
+/*Scaffolding*/
+
 @import "scaffolding.scss";
 
-// Base CSS
+/*Base CSS*/
+
 @import "type.scss";

@@ -1,7 +1,4 @@
-// Variables.less
-
-
-// GLOBAL VALUES
+// GLOBAL VALUES ---------------------------------------------------------------------------------
 // --------------------------------------------------
 
 
@@ -28,11 +25,21 @@ $pink:                  #c3325f;
 $purple:                #7a43b6;
 
 
-// Scaffolding
+// Scaffolding ---------------------------------------------------------------------------------
 // -------------------------
-$bodyBackground:        $white;
-$textColor:             $grayDark;
 
+// Sizes
+// -------------------------
+$wrapperWidth:            1002px;
+$headerHeight:            150px;
+$sideLeftWidth:           250px;
+$sideRightWidth:          250px;
+$footerHeight:            100px;
+
+// Backgrounds
+// -------------------------
+$hrColor:                $grayLight;
+$bodyBackground:         $white;
 
 // Links
 // -------------------------
@@ -40,16 +47,19 @@ $linkColor:             #08c;
 $linkColorHover:        darken($linkColor, 15%);
 
 
-// Typography
+// Typography ---------------------------------------------------------------------------------
 // -------------------------
 $sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 $monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
 
-$baseFontSize:          13px;
+$baseFontSize:          12px;
 $baseFontFamily:        $sansFontFamily;
 $baseLineHeight:        18px;
+$baseTextColor:         $grayDark;
 $altFontFamily:         $serifFontFamily;
+$inputsFontFamily:        sans-serif;
+$inputsFontSize:          10px;
 
 $headingsFontFamily:    inherit; // empty to use BS default, $baseFontFamily
 $headingsFontWeight:    bold;    // instead of browser default, bold
@@ -62,7 +72,3 @@ $tableBackground:                   transparent; // overall background-color
 $tableBackgroundAccent:             #f9f9f9; // for striping
 $tableBackgroundHover:              #f5f5f5; // for hover
 $tableBorder:                       #ddd; // table and cell border
-
-// Hr border color
-// -------------------------
-$hrBorder:                $grayLighter;

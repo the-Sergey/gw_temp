@@ -1,16 +1,38 @@
 // Scaffolding
 // Basic and global styles for generating a grid system, structural layout, and page templates
 // -------------------------------------------------------------------------------------------
-html {
-	height: 100%;
-}
 body {
-	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
-	height: 100%;
-	width: 100%;
+	background: $bodyBackground;
+	font: #{$baseFontSize}/#{$baseLineHeight} $baseFontFamily;
+	color: $baseTextColor;
 }
+
+// Addresses `font-family` inconsistency between `textarea` and other form
+// elements.
+
+html,
+button,
+input,
+select,
+textarea {
+	  font: $inputsFontSize $inputsFontFamily;
+}
+
+// Hr normalize
+
+hr{
+	clear: both;	
+	border: none;
+	width: 90%;
+	height: 1px;
+	background: $hrColor;
+	color: $hrColor;
+	margin: 20px auto 20px;
+	text-align: center;
+}
+
 #wrapper {
-	width: 1002px;
+	width: $wrapperWidth;
 	margin: 0 auto;
 	min-height: 100%;
 	height: auto !important;
@@ -19,14 +41,14 @@ body {
 /* Header
 -----------------------------------------------------------------------------*/
 #header {
-	height: 150px;
+	height: $headerHeight;
 	background: #FFE680;
 }
 /* Middle
 -----------------------------------------------------------------------------*/
 #middle {
 	width: 100%;
-	padding: 0 0 100px;
+	padding: 0 0 $footerHeight;
 	height: 1%;
 	position: relative;
 }
@@ -43,14 +65,14 @@ body {
 	overflow: hidden;
 }
 #content {
-	padding: 0 270px 0 270px;
+	padding: 0 $sideRightWidth 0 $sideLeftWidth;
 }
 
 /* Sidebar Left
 -----------------------------------------------------------------------------*/
 #sideLeft {
 	float: left;
-	width: 250px;
+	width: $sideLeftWidth;
 	margin-left: -100%;
 	position: relative;
 	background: #B5E3FF;
@@ -61,8 +83,8 @@ body {
 #sideRight {
 	float: left;
 	margin-right: -3px;
-	width: 250px;
-	margin-left: -250px;
+	width: $sideRightWidth;
+	margin-left: -#{$sideRightWidth};
 	position: relative;
 	background: #FFACAA;
 }
@@ -70,9 +92,15 @@ body {
 /* Footer
 -----------------------------------------------------------------------------*/
 #footer {
-	width: 1002px;
-	margin: -100px auto 0;
-	height: 100px;
+	width: 100%;
+	margin: -#{$footerHeight} auto 0;
+	height: $footerHeight;
 	background: #BFF08E;
 	position: relative;
+	#footerBlock {
+		margin: 0 auto;
+		width: $wrapperWidth;
+		height: 100%;
+		background: #d8f5ba;
+	}
 }
