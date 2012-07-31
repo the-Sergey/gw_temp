@@ -38,13 +38,19 @@ $footerHeight:            100px;
 
 // Backgrounds
 // -------------------------
-$hrColor:                $grayLight;
 $bodyBackground:         $white;
+$headerBackground:       #ffe680;
+$middleBackground:       null;
+$containerBackground:    null;
+$footerBackground:       #bff08e;
+$footerBlockBackground:  #d8f5ba;
+$hrColor:                $grayLight;
 
 // Links
 // -------------------------
-$linkColor:             #08c;
-$linkColorHover:        darken($linkColor, 15%);
+$linkColor:             $blue;
+$linkColorVisited:      $red;
+$linkColorHover:        null;
 
 
 // Typography ---------------------------------------------------------------------------------
