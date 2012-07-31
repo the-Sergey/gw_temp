@@ -350,3 +350,26 @@ h6 {
   color: #999999;
   text-transform: uppercase;
 }
+
+/*CSS Misc*/
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+.ok {
+  color: #46a546;
+}
+
+.error {
+  color: #9d261d;
+}

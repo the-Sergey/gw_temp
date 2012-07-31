@@ -1,14 +1,10 @@
 /*
-Syntax error: Undefined variable: "$baseLineHeight".
-        on line 3 of c:/Github/gw_temp/sass/type.scss
-
-1: c:/Github/gw_temp/sass/type.scss
+Syntax error: Undefined variable: "$green".
+        on line 19 of c:/Github/gw_temp/sass/misc.scss
 
 Backtrace:
-c:/Github/gw_temp/sass/type.scss:3
+c:/Github/gw_temp/sass/misc.scss:19
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.275/lib/sass/script/variable.rb:49:in `_perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.275/lib/sass/script/node.rb:40:in `perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.275/lib/sass/script/operation.rb:74:in `_perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.275/lib/sass/script/node.rb:40:in `perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/perform.rb:237:in `visit_prop'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.275/lib/sass/tree/visitors/base.rb:37:in `visit'
@@ -63,4 +59,4 @@ C:/Ruby193/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$baseLineHeight\".\A         on line 3 of c:/Github/gw_temp/sass/type.scss\A \A 1: c:/Github/gw_temp/sass/type.scss"; }
+  content: "Syntax error: Undefined variable: \"$green\".\A         on line 19 of c:/Github/gw_temp/sass/misc.scss"; }
