@@ -94,7 +94,7 @@ hr {
 	width: $sideLeftWidth;
 	margin-left: -100%;
 	position: relative;
-	background: #B5E3FF;
+	background: $sideLeftBackground;
 }
 
 /* Sidebar Right
@@ -105,7 +105,7 @@ hr {
 	width: $sideRightWidth;
 	margin-left: -#{$sideRightWidth};
 	position: relative;
-	background: #FFACAA;
+	background: $sideRightBackground;
 }
 
 /* Footer
