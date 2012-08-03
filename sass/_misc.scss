@@ -1,23 +1,22 @@
-/*CSS Misc*/
+// Misc.scss
 
-
-// Tools
-// -------------------------
-
-.cf:before,
-.cf:after{
+// Clearfix
+.cf {
+	zoom:1
+	&:before,
+	&:after {
 	content:"";
 	display:table;
+	}
+	&:after {
+		clear:both;
+	}
 }
-.cf:after{
-	clear:both;
-}
-.cf {
-	zoom:1;
-}
-.ok{
+
+// For programmers
+.ok {
 	color: $green;
 }
-.error{
+.error {
 	color: $red;
 }

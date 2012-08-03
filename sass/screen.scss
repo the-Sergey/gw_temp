@@ -1,17 +1,23 @@
-/*CSS Reset*/
-
+/*Reset CSS*/
 @import "reset.scss";
 
-// Core variables and mixins
+// Helpers
+@import "compass/css3";
 
-@import "variables.scss"; // Modify this for custom colors, font-sizes, etc
+// Core variables and mixins
+@import "constants.scss";
+@import "variables.scss";
 @import "mixins.scss";
 
-/*Scaffolding*/
-
+/*Scaffolding CSS*/
 @import "scaffolding.scss";
 
 /*Base CSS*/
-
 @import "type.scss";
+@import "main.scss";
+
+/*Blocks CSS*/
+// @import "blocks/mainMenu.scss";
+
+/*Misc CSS*/
 @import "misc.scss";
