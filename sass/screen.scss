@@ -3,6 +3,7 @@
 
 // Helpers
 @import "compass/css3";
+@import "compass/utilities/sprites";
 
 // Core variables and mixins
 @import "constants.scss";
@@ -10,7 +11,7 @@
 @import "mixins.scss";
 
 /*Sprites*/
-@import "bg/*.png";
+// @import "bg/*.png";
 
 /*Scaffolding CSS*/
 @import "scaffolding.scss";
@@ -21,6 +22,9 @@
 
 /*Blocks CSS*/
 @import "blocks/mainMenu.scss";
+@import "blocks/news.scss";
+@import "blocks/slider.scss";
+@import "blocks/breadcrumbs.scss";
 
 /*Misc CSS*/
 @import "misc.scss";
