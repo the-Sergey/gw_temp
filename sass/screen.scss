@@ -9,6 +9,9 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+/*Sprites*/
+@import "bg/*.png";
+
 /*Scaffolding CSS*/
 @import "scaffolding.scss";
 
@@ -17,7 +20,7 @@
 @import "main.scss";
 
 /*Blocks CSS*/
-// @import "blocks/mainMenu.scss";
+@import "blocks/mainMenu.scss";
 
 /*Misc CSS*/
 @import "misc.scss";
