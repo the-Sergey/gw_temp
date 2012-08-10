@@ -45,7 +45,15 @@ $inputsFontSize:        10px;
 $headingsFontFamily:    inherit; // empty to use BS default, $baseFontFamily
 $headingsFontWeight:    bold;    // instead of browser default, bold
 $headingsColor:         inherit; // empty to use BS default, $textColor
+$headingTextTransform:  uppercase;
 
+// Main_menu
+$main_menuFontSize: 14px;
+$main_menuColor: #0e236f;
+$main_menuFontFamily: "Times New Roman";
+$main_menuTextTransform: uppercase;
+$main_menuTextActive: $white;
+$main_menuTextHover: $white;
 
 // Tables
 // -------------------------
