@@ -16,3 +16,14 @@ $(document).ready( function(){
         });
     };    
 });
+
+<!--mainMenu-->
+<script>
+    $('.main_menu ul li').hover(
+    function() {
+        $(this).addClass('open').find('ul').stop(true, true);
+        $(this).find('> ul').slideDown();
+    }, function() {
+        $(this).removeClass('open').find('> ul').slideUp('fast');
+    });
+</script>
