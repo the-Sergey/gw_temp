@@ -89,7 +89,7 @@ hr {
 
 /* Sidebar Left
 -----------------------------------------------------------------------------*/
-#sideLeft {
+#side-left {
 	float: left;
 	width: $sideLeftWidth;
 	margin-left: -100%;
@@ -99,7 +99,7 @@ hr {
 
 /* Sidebar Right
 -----------------------------------------------------------------------------*/
-#sideRight {
+#side-right {
 	float: left;
 	margin-right: -3px;
 	width: $sideRightWidth;
@@ -116,7 +116,7 @@ hr {
 	height: $footerHeight;
 	background: $footerBackground;
 	position: relative;
-	#footerBlock {
+	#footer-block {
 		margin: 0 auto;
 		width: $wrapperWidth;
 		height: 100%;
