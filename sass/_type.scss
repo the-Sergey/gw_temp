@@ -1,41 +1,44 @@
 //Type.scss
 
 // Headers
-h1 {
-  font-size: 30px;
-  line-height: $baseLineHeight * 2;
-  small {
-    font-size: 18px;
-  }
+h1 {font-size: 30px; line-height: $baseLineHeight * 2;
+  small {font-size: 18px;}
 }
-h2 {
-  font-size: 24px;
-  line-height: $baseLineHeight * 2;
-  small {
-    font-size: 18px;
-  }
+h2 {font-size: 24px; line-height: $baseLineHeight * 2;
+  small {font-size: 18px;}
 }
-h3 {
-  font-size: 18px;
-  line-height: $baseLineHeight * 1.5;
-  small {
-    font-size: 14px;
-  }
+h3 {font-size: 18px; line-height: $baseLineHeight * 1.5;
+  small {font-size: 14px;}
 }
-h4, h5, h6 {
-  line-height: $baseLineHeight;
+h4,
+h5,
+h6 {line-height: $baseLineHeight;}
+h4 {font-size: 14px;
+  small {font-size: 12px;}
 }
-h4 {
-  font-size: 14px;
-  small {
-    font-size: 12px;
-  }
+h5 {font-size: 12px;}
+h6 {font-size: 11px; color: $grayLight; text-transform: uppercase;}
+
+// Links
+a {color:$linkColor; text-decoration:underline; font-family:$linkFontFamily;
+  &:visited {color:$linkColorVisited;}
+  &:hover {text-decoration:none;}
 }
-h5 {
-  font-size: 12px;
+a.dashed {text-decoration:none; border-bottom:1px dashed $linkColor;
+  &:hover {border-bottom:none;}
+  &:visited {border-bottom:1px dashed $linkColorVisited;}
 }
-h6 {
-  font-size: 11px;
-  color: $grayLight;
-  text-transform: uppercase;
+a.psevdo {text-decoration:none;
+  span {color:$linkColor; text-decoration:underline;}
+  &:visited span {color:$linkColorVisited;}
+  &:hover span {color:$linkColorHover; text-decoration:none;}
+  &:visited:hover span {color:$linkColorVisited;}
 }
+a.psevdo.dashed {border-bottom:none;
+  span {text-decoration:none; border-bottom:1px dashed $linkColor;}
+  &:visited span {border-bottom:1px dashed $linkColorVisited;}
+  &:hover span {border-bottom:none;}
+}
+
+// Icons
+.ico {display:inline-block; vertical-align:middle; margin-right:5px;}

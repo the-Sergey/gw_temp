@@ -23,9 +23,7 @@ body {
 a:focus {
   outline: thin dotted;
 }
-
-a:active,
-a:hover {
+a:active, a:hover {
   outline: 0;
 }
 
@@ -35,6 +33,7 @@ h3,
 h4,
 h5,
 h6 {
+  margin-top: 0;
   margin-bottom: 15px;
 }
 
@@ -75,8 +74,7 @@ q {
   quotes: none;
 }
 
-q:before,
-q:after {
+q:before, q:after {
   content: '';
   content: none;
 }
@@ -222,19 +220,6 @@ textarea {
   font: 10px sans-serif;
 }
 
-a {
-  color: #049cdb;
-  text-decoration: underline;
-}
-
-a:visited {
-  color: #9d261d;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
 hr {
   clear: both;
   border: none;
@@ -281,7 +266,6 @@ hr {
 #container {
   width: 100%;
   float: left;
-  overflow: hidden;
 }
 
 #content {
@@ -290,7 +274,7 @@ hr {
 
 /* Sidebar Left
 -----------------------------------------------------------------------------*/
-#sideLeft {
+#side-left {
   float: left;
   width: 250px;
   margin-left: -100%;
@@ -300,7 +284,7 @@ hr {
 
 /* Sidebar Right
 -----------------------------------------------------------------------------*/
-#sideRight {
+#side-right {
   float: left;
   margin-right: -3px;
   width: 250px;
@@ -318,7 +302,8 @@ hr {
   background: #bff08e;
   position: relative;
 }
-#footer #footerBlock {
+
+#footer-block {
   margin: 0 auto;
   width: 1002px;
   height: 100%;
@@ -350,7 +335,9 @@ h3 small {
   font-size: 14px;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   line-height: 18px;
 }
 
@@ -371,21 +358,127 @@ h6 {
   text-transform: uppercase;
 }
 
+a {
+  color: #049cdb;
+  text-decoration: underline;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+a:visited {
+  color: #9d261d;
+}
+a:hover {
+  text-decoration: none;
+}
+
+a.dashed {
+  text-decoration: none;
+  border-bottom: 1px dashed #049cdb;
+}
+a.dashed:hover {
+  border-bottom: none;
+}
+a.dashed:visited {
+  border-bottom: 1px dashed #9d261d;
+}
+
+a.psevdo {
+  text-decoration: none;
+}
+a.psevdo span {
+  color: #049cdb;
+  text-decoration: underline;
+}
+a.psevdo:visited span {
+  color: #9d261d;
+}
+a.psevdo:hover span {
+  text-decoration: none;
+}
+a.psevdo:visited:hover span {
+  color: #9d261d;
+}
+
+a.psevdo.dashed {
+  border-bottom: none;
+}
+a.psevdo.dashed span {
+  text-decoration: none;
+  border-bottom: 1px dashed #049cdb;
+}
+a.psevdo.dashed:visited span {
+  border-bottom: 1px dashed #9d261d;
+}
+a.psevdo.dashed:hover span {
+  border-bottom: none;
+}
+
+.ico {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#header .row-top {
+  height: 0;
+}
+#header .row-middle {
+  height: 0;
+}
+#header .row-bottom {
+  height: 0;
+}
+
+#footer .row-top {
+  height: 0;
+}
+#footer .row-middle {
+  height: 0;
+}
+#footer .row-bottom {
+  height: 0;
+}
+
 /*Blocks CSS*/
 /*Misc CSS*/
-/*CSS Misc*/
-.cf:before,
-.cf:after {
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+ul.reset {
+  margin: 0;
+  padding: 0;
+}
+ul.reset li {
+  list-style: none;
+}
+
+input.reset,
+button.reset {
+  background: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.cf:before, .cf:after {
   content: "";
   display: table;
 }
-
 .cf:after {
   clear: both;
-}
-
-.cf {
-  zoom: 1;
 }
 
 .ok {

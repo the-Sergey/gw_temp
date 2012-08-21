@@ -1,0 +1,2 @@
+// Bacground and size
+@mixin bg($name) {width:image-width('t/'+$name+'.png'); height:image-height('t/'+$name+'.png'); background: sprite($t, $name);}

@@ -1,17 +1,17 @@
-/*Reset CSS*/
-@import "reset.scss";
-
 // Helpers
 @import "compass/css3";
 @import "compass/utilities/sprites";
+// $t: sprite-map("t/*.png",
+//   $bg-position: 100%, $bg-spacing:0, $bg-repeat: no-repeat);
+
+/*Reset CSS*/
+@import "reset.scss";
 
 // Core variables and mixins
 @import "constants.scss";
 @import "variables.scss";
 @import "mixins.scss";
 
-/*Sprites*/
-// @import "bg/*.png";
 
 /*Scaffolding CSS*/
 @import "scaffolding.scss";
@@ -21,10 +21,10 @@
 @import "main.scss";
 
 /*Blocks CSS*/
-@import "blocks/mainMenu.scss";
-@import "blocks/news.scss";
-@import "blocks/slider.scss";
-@import "blocks/breadcrumbs.scss";
+//@import "blocks/mainMenu.scss";
+//@import "blocks/news.scss";
+//@import "blocks/slider.scss";
+//@import "blocks/breadcrumbs.scss";
 
 /*Misc CSS*/
 @import "misc.scss";
