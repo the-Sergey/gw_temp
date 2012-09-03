@@ -1,3 +1,22 @@
+//
+// News
+// --------------------------------------------------
+// <div class="news_block">
+//     <h3>Новости<a class="in" href="#">все новости</a></h3>
+//     <div class="list_nwes">
+//         <div class="news_box">
+//             <span>12 марта 2012</span>
+//             <div>Текст анонса</div>                       
+//             <a href="#">подробнее</a>
+//         </div>
+//         <div class="news_box">
+//             <span>12 марта 2012</span>
+//             <div>Текст анонса</div>                      
+//             <a href="#">подробнее</a>
+//         </div>
+//     </div>              
+// </div>
+// --------------------------------------------------
 .news_block {
     background: none no-repeat scroll 0 0 transparent;
     float: left;
@@ -15,29 +34,29 @@
         text-transform: none;
         }
     }
-}
-.list_nwes {
-    padding: 0;
-    span {
-        clear: both;
-        color: #5e5e5e;
-        display: block;
-        font-size: 14px; 
-        margin: 0 0 5px 0;       
-    }
-}
-.news_box {
-    background: none no-repeat scroll 0 0 #f4f4f4;
-    margin-bottom: 30px;
-    padding: 15px;    
-    div {
-        margin: 5px 0;        
-    }
-    a {
-        color: #0e236f;
-        font-size: 13px;        
-        font-weight: normal;
-        margin: 0;
+    .list_nwes {
+        padding: 0;
+        .news_box {
+            background: none no-repeat scroll 0 0 #f4f4f4;
+            margin-bottom: 30px;
+            padding: 15px 0;
+            span {
+                clear: both;
+                color: #5e5e5e;
+                display: block;
+                font-size: 14px; 
+                margin: 0 0 5px 0;       
+            }    
+            div {
+                margin: 5px 0;        
+            }
+            a {
+                color: #0e236f;
+                font-size: 13px;        
+                font-weight: normal;
+                margin: 0;
+            }
+        }
     }
 }
 h2 a.in, h1 a.in {

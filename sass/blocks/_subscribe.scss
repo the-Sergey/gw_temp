@@ -1,0 +1,50 @@
+//
+// Subscribe block
+// --------------------------------------------------
+// <div class="subscribe_block">
+//     <h3>Рассылка:</h3>
+//     <input id="subscribe-mail" class="text" type="e-mail" value="введите ваш e-mail" title="введите ваш e-mail">
+//     <input id="subscribe-add" class="button" type="submit" value="">
+// </div>
+// --------------------------------------------------
+.subscribe_block {   
+    margin: 12px 0 0 0;
+    width: 203px;
+    float: left;    
+    title {
+        font-size: 11px;
+        margin: 0 0 0 10px;
+        text-transform: uppercase;
+    }
+    h3 {
+        margin: 0 0 0 8px;
+        font-weight: normal;
+        font-size: 14px;
+        font-family: Georgia, serif;
+        color: #464646;
+        text-transform: uppercase;        
+    }
+    input.text {        
+        border: medium none;       
+        color: #cacaca;
+        float: left;
+        font-size: 11px;
+        font-style: italic;        
+        margin: 4px 0 0;
+        outline: medium none;
+        padding: 5px 5px 0 10px;
+        width: 148px;
+        height: 32px;               
+    }
+    input.button {        
+        border: medium none;
+        cursor: pointer;
+        float: right;
+        font-size: 12px;
+        height: 38px;
+        margin: 4px 0 0 0;
+        text-align: center;
+        text-transform: uppercase;
+        width: 40px;
+    }
+}

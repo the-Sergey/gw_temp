@@ -1,80 +1,6 @@
+// LofSliderNews
+
 /* slider layout */
-.slider_block {
-	width: 1002px;
-	height: 263px;
-	border-top: 7px solid #001e71;
-	position: relative;
-}
-.slider_right {
-	background: url("../images/slider_right.png") no-repeat scroll 100% 0% transparent;
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 218px;
-	width: 300px;
-	z-index: 9999;
-	.inner_right {
-		width: 84px;
-		float: right;
-		.popover_icon1 {			
-			margin: 20px 0 0 0;
-			cursor: pointer;
-		}
-		.popover_icon2 {			
-			margin: 20px 0 0 0;
-			cursor: pointer;
-		}
-		.popover_icon3 {			
-			margin: 20px 0 0 0;
-			cursor: pointer;
-		}
-	}
-}
-.add_services {
-	text-align: right;
-	.popover1 {
-		background: sprite($icon-sprite, popover_01);
-		width: 170px;
-		height: 42px;
-		color: $white;
-		padding: 10px 48px 5px 10px;
-		margin: 7px 0 0 0;
-		float: left;
-		display: none;
-	}
-	.popover2 {
-		background: sprite($icon-sprite, popover_02);
-		width: 170px;
-		height: 42px;
-		color: $white;
-		padding: 10px 48px 5px 10px;
-		margin: 7px 0 0 0;
-		float: left;
-		display: none;
-	}
-	.popover3 {
-		background: sprite($icon-sprite, popover_03);
-		width: 170px;
-		height: 42px;
-		color: #001a61;
-		padding: 10px 48px 5px 10px;
-		margin: 7px 0 0 0;
-		float: left;
-		display: none;
-	}
-}
-
-.payments {
-	background: sprite($icon-sprite, payments);
-	position: absolute;
-	right: 7px;
-	bottom: 3px;
-	width: 253px;
-	height: 23px;
-	z-index: 1;
-}
-
-
 .lof-slidecontent { position:relative;	overflow:hidden;	border:#F4F4F4 solid 1px;}
 .lof-slidecontent .preload{	height:100%;	width:100%;	position:absolute;	top:0;	left:0;	z-index:100000;	text-align:center;	background:#FFF}
 .lof-slidecontent .preload div{	height:100%;	width:100%;	background:transparent url(../images/load-indicator.gif) no-repeat scroll 50% 50%;}
@@ -189,7 +115,7 @@ ul.sliders-wrap-inner li img{	padding:0px;	}
 	background:transparent;
 	color:#000;
 	display:block;
-	// -moz-transition: background-color  0.8s
+	-moz-transition: background-color  0.8s
 }
 .lof-slidecontent  .button-next, 
 .lof-slidecontent .button-previous{

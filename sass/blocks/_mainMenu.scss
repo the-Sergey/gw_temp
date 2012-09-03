@@ -1,3 +1,20 @@
+// Main_menu
+// <div class="main_menu">
+//     <ul>
+//         <li><a href="#">О нас</a></li>
+//         <li><a href="#">Наши марки</a></li>                 
+//         <li><a href="#">Контакты</a></li>
+//         <li class="active"><a href="#">Корпоративным клиентам</a></li>      
+//         <li><a href="#">Обратная связь</a></li>
+//     </ul>           
+// </div>
+$main_menuFontSize: 14px;
+$main_menuColor: #999279;
+$main_menuFontFamily: Georgia, serif;
+$main_menuTextTransform: uppercase;
+$main_menuTextActive: #9c8123;
+$main_menuTextHover: $main_menuTextActive;
+
 .main_menu {
     background: url(../images/bg_main_menu.png) no-repeat scroll 0 0 transparent;
     float: right;
