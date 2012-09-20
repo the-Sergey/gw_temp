@@ -217,7 +217,7 @@ button,
 input,
 select,
 textarea {
-  font: 10px sans-serif;
+  font: 12px Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 hr {

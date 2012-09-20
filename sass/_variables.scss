@@ -38,8 +38,15 @@ $baseFontFamily:          $sansFontFamily;
 $baseLineHeight:          18px;
 $baseTextColor:           $grayDark;
 $altFontFamily:           $serifFontFamily;
-$inputsFontFamily:        sans-serif;
-$inputsFontSize:          10px;
+
+
+// Forms
+// -------------------------
+$inputBackground:         $white;
+$inputBorder:             #ccc;
+$inputBorderRadius:       null;
+$inputsFontFamily:        $baseFontFamily;
+$inputsFontSize:          $baseFontSize;
 
 $headingsFontFamily:      inherit; // empty to use BS default, $baseFontFamily
 $headingsFontWeight:      bold;    // instead of browser default, bold
