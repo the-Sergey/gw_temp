@@ -35,11 +35,17 @@ hr {
 }
 
 #wrapper {
-	width: $wrapperWidth;
+	@if $template == liquid {
+		max-width: 1200px;    	
+    	min-width: $wrapperWidth;
+	}
+	@if $template == fixed {
+		width: $wrapperWidth;
+	}	
 	margin: 0 auto;
 	min-height: 100%;
 	height: auto !important;
-	height: 100%;
+	// height: 100%;
 }
 
 /* Header
@@ -98,7 +104,13 @@ hr {
 /* Footer
 -----------------------------------------------------------------------------*/
 #footer {
-	width: 100%;
+	@if $template == liquid {
+		max-width: $footerWidthMax;
+    	min-width: $footerWidthMin;
+	}
+	@if $template == fixed {
+		width: $footerWidth;
+	}	
 	margin: -#{$footerHeight} auto 0;
 	height: $footerHeight;
 	background: $footerBackground;
