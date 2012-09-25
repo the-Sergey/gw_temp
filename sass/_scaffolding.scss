@@ -36,7 +36,7 @@ hr {
 
 #wrapper {
 	@if $template == liquid {
-		max-width: 1200px;    	
+		max-width: $wrapperWidthMax;    	
     	min-width: $wrapperWidth;
 	}
 	@if $template == fixed {
