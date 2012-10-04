@@ -1,8 +1,8 @@
 // Helpers
 @import "compass/css3";
 @import "compass/utilities/sprites";
-// $t: sprite-map("t/*.png",
-//   $bg-position: 100%, $bg-spacing:0, $bg-repeat: no-repeat);
+$sprite: sprite-map("sprite/*.png",
+		$bg-position: 100%, $bg-spacing:0, $bg-repeat: no-repeat);
 
 /*Reset CSS*/
 @import "reset.scss";
@@ -19,15 +19,15 @@
 /*Base CSS*/
 @import "type.scss";
 @import "main.scss";
+@import "forms.scss";
 
 /*Blocks CSS*/
-//@import "blocks/mainMenu.scss";
-//@import "blocks/news.scss";
-//@import "blocks/slider.scss";
-//@import "blocks/breadcrumbs.scss";
-//@import "blocks/navs.scss";
-//@import "blocks/search.scss";
-//@import "blocks/subscribe.scss";
+@import "blocks/news.scss";
+@import "blocks/slider.scss";
+@import "blocks/forms.scss";
+@import "blocks/breadcrumbs.scss";
+@import "blocks/navs.scss";
+@import "blocks/cat.scss";
 
 /*Misc CSS*/
 @import "misc.scss";

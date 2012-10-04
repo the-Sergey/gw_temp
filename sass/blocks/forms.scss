@@ -1,0 +1,28 @@
+//
+// Forms
+// --------------------------------------------------
+// <form class="form search">
+//    <input class="text" type="text" title="искать на сайте" value="искать на сайте">
+//    <input class="btn" type="submit" value="Поиск">
+// </form>
+// --------------------------------------------------
+.form {     
+  .text {
+    background: none repeat scroll 0 0 $inputBackground;      
+    border: none;
+    line-height: 1em;        
+    color: #cacaca;
+    padding: 0.25em;
+    font-size: $inputsFontSize;           
+    outline: medium none;     
+    font-family: $inputsFontFamily;    
+  }
+  .btn {          
+    border: 1px solid $inputBorder;
+    cursor: pointer;                 
+    line-height: $baseLineHeight;      
+    padding: 0.25em;      
+    font-size: $inputsFontSize;
+    @include border-radius($inputBorderRadius);    
+  }
+}

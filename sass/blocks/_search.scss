@@ -14,19 +14,19 @@
   margin: 28px 0 0 20px;
   width: 200px;  
   input.text {      
-      border: none;        
-      color: #cacaca;
-      float: left;
-      font-size: $inputsFontSize;
-      font-style: italic;        
-      margin: 8px 0 0 8px;
-      outline: medium none;
-      padding: 0;
-      width: 155px;
-      font-family: $inputsFontFamily;
-      &:focus {
-          color: #cacaca;    
-      }
+    border: none;        
+    color: #cacaca;
+    float: left;
+    font-size: $inputsFontSize;
+    font-style: italic;        
+    margin: 8px 0 0 8px;
+    outline: medium none;
+    padding: 0;
+    width: 155px;
+    font-family: $inputsFontFamily;
+    &:focus {
+        color: #cacaca;    
+    }
   }
   input.button {          
     border: medium none;

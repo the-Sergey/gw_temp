@@ -6,6 +6,34 @@
   .row-middle {height:0;}
   .row-bottom {height:0;}
 }
+.logo {
+  margin: 7px 0 0 12px;  
+  float: left;  
+  z-index: 200; 
+  h3 {  	
+  	position: absolute;
+  	left: 394px;
+  	top: 38px;
+  	font-size: 18px;    
+  	color: #282828;  	
+  }
+}
+.block {
+
+}
+.copyright {
+  float: left;  
+  margin: 5px 0 0 0;       
+}
+.links {
+  float: right;   
+  margin: 12px 0 0 0;  
+}
+.address { 
+  margin: 15px 0 0 0;
+  padding: 0;  
+}
+
 #footer {
   .row-top {height:0;}
   .row-middle {height:0;}

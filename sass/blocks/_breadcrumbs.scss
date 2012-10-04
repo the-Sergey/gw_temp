@@ -1,22 +1,27 @@
-//Breadcrumbs
-// <div class="breadcrumbs">
-//     <a href="#">Главная</a>
-//     <span>/</span>
-//     <a href="#">Каталог</a>
-//     <span>/</span>    
-//     <a href="#">Товар</a>
-//     <span>/</span>
-//     Товарная единица
-// </div>
+//
+// Breadcrumbs
+// <ul class="breadcrumbs">
+//     <li><a href="#">Главная</a><span>/</span></li>    
+//     <li><a href="#">Каталог</a><span>/</span></li>
+//     <li>Товарная единица</li>
+// </ul>
+// --------------------------------------------------
 .breadcrumbs {
-    background: none no-repeat scroll 0 0 transparent;    
-    clear: both;
-    color: #312410;
-    font-size: 13px;    
-    margin: 0 15px 15px;
-    padding: 22px 11px 15px 0;
+  list-style: none;
+  background-color: $white;  
+  color: $baseTextColor;
+  font-size: $baseFontSize;    
+  margin: 0 0 15px;
+  padding: 8px 10px;
+  li {
+    display: inline-block;
+    @include ie7-inline-block;
     a {
-	    color: #0e236f;
-	    margin: 0 5px;
-	}
+      color: $linkColor;
+      line-height: $baseLineHeight;      
+    }
+    span {
+      padding: 0 5px;
+    }
+  }  
 }

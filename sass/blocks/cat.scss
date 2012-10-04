@@ -1,0 +1,6 @@
+.product {
+  width: image-width("../images/140x100.gif");
+  display: inline-block;
+  @include ie7-inline-block;
+  vertical-align: top;    
+}
