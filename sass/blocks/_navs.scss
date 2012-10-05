@@ -9,7 +9,7 @@
 //  </ul>           
 // --------------------------------------------------
 $navFontSize: 14px;
-$navColor: #999279;
+$navColor: $linkColor;
 $navFontFamily: Georgia, serif;
 $navTextTransform: uppercase;
 $navTextActive: #9c8123;
@@ -44,8 +44,7 @@ $navTextHover: $navTextActive;
       color: $navColor;
       display: inline-block;                
       font-size: $navFontSize;
-      padding: 10px 15px;
-      text-decoration: none;
+      padding: 10px 15px;      
       text-transform: $navTextTransform;
     }      
   }
@@ -76,7 +75,7 @@ $navTextHover: $navTextActive;
   li {
     background: none repeat scroll 0 0 #66625e;            
     margin: 0;
-    border-bottom: 1px solid #85817e;                    
+    border-bottom: 1px solid #E5E5E5;                    
     a {
       color: $white;
       display: block;
@@ -109,4 +108,9 @@ $navTextHover: $navTextActive;
       // Your styles here
     }
   }
+}
+
+// Nav lang
+.nav.lang {  
+  
 }

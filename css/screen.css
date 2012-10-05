@@ -418,13 +418,13 @@ a.psevdo.dashed:hover span {
 }
 
 #header .row-top {
-  height: 0;
+  height: 50px;
 }
 #header .row-middle {
-  height: 0;
+  height: 50px;
 }
 #header .row-bottom {
-  height: 0;
+  height: 50px;
 }
 
 .logo {
@@ -612,11 +612,10 @@ h2 a.in, h1 a.in {
   border: medium none;
 }
 .nav.main > li > a {
-  color: #999279;
+  color: #049cdb;
   display: inline-block;
   font-size: 14px;
   padding: 10px 15px;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -646,7 +645,7 @@ h2 a.in, h1 a.in {
 .nav.main.sub > li ul li {
   background: none repeat scroll 0 0 #66625e;
   margin: 0;
-  border-bottom: 1px solid #85817e;
+  border-bottom: 1px solid #E5E5E5;
 }
 .nav.main.sub > li ul li a {
   color: white;

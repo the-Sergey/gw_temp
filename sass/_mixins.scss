@@ -7,3 +7,8 @@
 @mixin ie7-inline-block() {
   *display: inline; *zoom: 1;
 }
+
+// Icon mixin
+@mixin icon ($icon) {
+	background: sprite($sprite, $icon);
+}
