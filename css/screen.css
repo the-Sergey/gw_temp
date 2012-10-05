@@ -497,10 +497,7 @@ input[type="email"]:focus,
 
 /*Blocks CSS*/
 .news_block {
-  background: none no-repeat scroll 0 0 transparent;
-  float: left;
   margin: 6px 0 0;
-  padding: 0;
   width: 280px;
 }
 .news_block h3 {
@@ -618,47 +615,57 @@ h2 a.in, h1 a.in {
   color: #999279;
   display: inline-block;
   font-size: 14px;
-  padding: 11px 20px;
+  padding: 10px 15px;
   text-decoration: none;
   text-transform: uppercase;
 }
-.nav.main > li > ul {
+
+.nav > li.open > a, .nav > li.open > a:hover {
+  color: #9c8123;
+  text-decoration: none;
+}
+
+.nav > li.active > a {
+  cursor: default;
+  color: #9c8123;
+}
+
+.nav > li.active > a:hover {
+  text-decoration: none;
+}
+
+.nav.main.sub > li ul {
   list-style: none outside none;
   display: none;
   left: 0;
-  min-height: 30px;
   padding: 0;
   position: absolute;
   top: 27px;
-  width: 225px;
   z-index: 1112;
 }
-.nav.main > li > ul > li {
+.nav.main.sub > li ul li {
   background: none repeat scroll 0 0 #66625e;
-  margin: 0 4px;
+  margin: 0;
   border-bottom: 1px solid #85817e;
 }
-.nav.main > li > ul > li > a {
+.nav.main.sub > li ul li a {
   color: white;
   display: block;
-  padding: 6px 0 6px 15px;
+  padding: 8px 14px;
   text-transform: none;
   text-decoration: none;
   font-size: 13px;
 }
 
-.main_menu > ul > li.open > a, .main_menu > ul > li.open > a:hover {
-  color: #9c8123;
-  text-decoration: none;
+.nav.side li {
+  display: block;
+  line-height: 18px;
 }
-
-.main_menu > ul > li.active > a {
-  cursor: default;
-  color: #9c8123;
-}
-
-.main_menu > ul > li.active > a:hover {
-  text-decoration: none;
+.nav.side li a {
+  display: block;
+  border: 1px solid #E5E5E5;
+  margin: 0 0 -1px;
+  padding: 8px 14px;
 }
 
 .product {

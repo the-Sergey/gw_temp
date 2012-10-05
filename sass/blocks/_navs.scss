@@ -1,0 +1,112 @@
+//
+// Navs
+// <ul class="nav">
+//     <li><a href="#">О нас</a></li>
+//     <li><a href="#">Наши марки</a></li>                 
+//     <li><a href="#">Контакты</a></li>
+//     <li class="active"><a href="#">Корпоративным клиентам</a></li>      
+//     <li><a href="#">Обратная связь</a></li>
+//  </ul>           
+// --------------------------------------------------
+$navFontSize: 14px;
+$navColor: #999279;
+$navFontFamily: Georgia, serif;
+$navTextTransform: uppercase;
+$navTextActive: #9c8123;
+$navTextHover: $navTextActive;
+
+// Base nav
+.nav {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    @include ie7-inline-block;   
+  }
+}
+
+// Main nav
+.nav.main {
+  text-align: center;
+  > li {     
+    margin: 0 -3px 0 0;
+    padding: 0 0 0 2px;
+    position: relative;
+    vertical-align: top;
+    word-spacing: normal;    
+    z-index: 1110;            
+    &:first-child {
+      background: none;
+      border: medium none;
+    }
+    > a {
+      color: $navColor;
+      display: inline-block;                
+      font-size: $navFontSize;
+      padding: 10px 15px;
+      text-decoration: none;
+      text-transform: $navTextTransform;
+    }      
+  }
+}
+
+// Nav hover
+.nav > li.open > a, .nav > li.open > a:hover {  
+  color: $navTextHover;
+  text-decoration: none;               
+}
+.nav > li.active > a {   
+  cursor: default;
+  color: $navTextActive;     
+}
+.nav > li.active > a:hover {  
+  text-decoration: none;
+}
+
+// Sub nav
+.nav.main.sub > li ul {
+  list-style: none outside none;                
+  display: none;
+  left: 0;  
+  padding: 0;
+  position: absolute;                
+  top: 27px;  
+  z-index: 1112;                
+  li {
+    background: none repeat scroll 0 0 #66625e;            
+    margin: 0;
+    border-bottom: 1px solid #85817e;                    
+    a {
+      color: $white;
+      display: block;
+      padding: 8px 14px;
+      text-transform: none;
+      text-decoration: none;
+      font-size: 13px;
+    } 
+  } 
+}
+
+// Side nav
+.nav.side {
+  li {
+    display: block;
+    line-height: $baseLineHeight;
+    a {
+      display: block;
+      border: 1px solid #E5E5E5;      
+      margin: 0 0 -1px;
+      padding: 8px 14px;
+    }
+  }
+}
+
+// Foot nav
+.nav.foot {
+  li {
+    a {
+      // Your styles here
+    }
+  }
+}

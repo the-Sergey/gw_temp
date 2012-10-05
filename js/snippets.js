@@ -1,29 +1,16 @@
-$(document).ready( function(){	
-	$('.main_menu ul li').hover(
-        function() {
-            $(this).addClass('open');
-            $(this).find('ul').stop(true, true);
-            $(this).find('> ul').slideDown();
-        },
-        function() {
-            $(this).removeClass('open');
-            $(this).find('> ul').slideUp('fast'); 
-        }
-    );
-    if (window.PIE) {
-        $('.pie').each(function() {
-            PIE.attach(this);
-        });
-    };    
+
+// Nav => main
+$('ul.sub li').hover(function() {
+    $(this).addClass('open').find('ul').stop(true, true);
+    $(this).find('> ul').slideDown();
+	},
+	function() {
+    $(this).removeClass('open').find('> ul').slideUp('fast');
 });
 
-<!--mainMenu-->
-<script>
-    $('.main_menu ul li').hover(
-    function() {
-        $(this).addClass('open').find('ul').stop(true, true);
-        $(this).find('> ul').slideDown();
-    }, function() {
-        $(this).removeClass('open').find('> ul').slideUp('fast');
+// PIE init
+if (window.PIE) {
+    $('.pie').each(function() {
+        PIE.attach(this);
     });
-</script>
+};
