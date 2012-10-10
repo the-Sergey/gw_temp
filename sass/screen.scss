@@ -1,7 +1,7 @@
 // Helpers
 @import "compass/css3";
 @import "compass/utilities/sprites";
-$sprite: sprite-map("sprite/*.png",
+$sprited: sprite-map("sprite/*.png",
 		$bg-position: 100%, $bg-spacing:0, $bg-repeat: no-repeat);
 
 /*Reset CSS*/
