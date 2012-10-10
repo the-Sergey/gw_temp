@@ -28,10 +28,9 @@ $navTextHover: $navTextActive;
 
 // Main nav
 .nav.main {
-  text-align: center;
+  text-align: center;  
   > li {     
-    margin: 0 -3px 0 0;
-    padding: 0 0 0 2px;
+    margin: 0 -3px 0 0;    
     position: relative;
     vertical-align: top;
     word-spacing: normal;    
@@ -46,16 +45,18 @@ $navTextHover: $navTextActive;
       font-size: $navFontSize;
       padding: 10px 15px;      
       text-transform: $navTextTransform;
+      font-family: $navFontFamily;
     }      
   }
 }
 
 // Nav hover
-.nav > li.open > a, .nav > li.open > a:hover {  
+.nav > li.open > a, .nav > li.open > a:hover, .nav > li > a:hover {  
   color: $navTextHover;
   text-decoration: none;               
 }
-.nav > li.active > a {   
+.nav > li.active > a {
+  text-decoration: none;   
   cursor: default;
   color: $navTextActive;     
 }

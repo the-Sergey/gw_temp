@@ -601,7 +601,6 @@ h2 a.in, h1 a.in {
 }
 .nav.main > li {
   margin: 0 -3px 0 0;
-  padding: 0 0 0 2px;
   position: relative;
   vertical-align: top;
   word-spacing: normal;
@@ -617,14 +616,16 @@ h2 a.in, h1 a.in {
   font-size: 14px;
   padding: 10px 15px;
   text-transform: uppercase;
+  font-family: Georgia, serif;
 }
 
-.nav > li.open > a, .nav > li.open > a:hover {
+.nav > li.open > a, .nav > li.open > a:hover, .nav > li > a:hover {
   color: #9c8123;
   text-decoration: none;
 }
 
 .nav > li.active > a {
+  text-decoration: none;
   cursor: default;
   color: #9c8123;
 }

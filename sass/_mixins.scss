@@ -1,14 +1,9 @@
 // Bacground and size
 @mixin bg($name) {
-	width:image-width('t/'+$name+'.png'); height:image-height('t/'+$name+'.png'); background: sprite($t, $name);
+	width: image-width("sprite/#{$name}.png"); height: image-height("sprite/#{$name}.png"); background: sprite($sprited, $name);
 }
 
 // IE7 inline-block
 @mixin ie7-inline-block() {
   *display: inline; *zoom: 1;
-}
-
-// Icon mixin
-@mixin icon ($icon) {
-	background: sprite($sprite, $icon);
 }
