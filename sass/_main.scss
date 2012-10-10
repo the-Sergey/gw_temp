@@ -18,8 +18,12 @@
   	color: #282828;  	
   }
 }
-.block {
-
+#page-title {
+  color: $headingsColor;    
+  font-size: 18px;
+  font-weight: $headingsFontWeight;
+  font-family: $headingsFontFamily;
+  margin: 10px 25px;          
 }
 .copyright {
   float: left;  
