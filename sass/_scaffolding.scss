@@ -37,7 +37,7 @@ hr {
 #wrapper {
 	@if $template == liquid {
 		max-width: $wrapperWidthMax;    	
-    	min-width: $wrapperWidth;
+    min-width: $wrapperWidth;
 	} @else	if $template == fixed {
 		width: $wrapperWidth;
 	} @else {
@@ -58,6 +58,10 @@ hr {
 /* Middle
 -----------------------------------------------------------------------------*/
 #middle {
+	@if $template == Equal {
+		border-left: $sideLeftWidth solid $sideLeftBackground;
+    border-right: $sideRightWidth solid $sideRightBackground;
+	} 	
 	width: 100%;
 	padding: 0 0 $footerHeight;
 	height: 1%;

@@ -440,6 +440,14 @@ a.psevdo.dashed:hover span {
   color: #282828;
 }
 
+#page-title {
+  color: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: inherit;
+  margin: 10px 25px;
+}
+
 .copyright {
   float: left;
   margin: 5px 0 0 0;
@@ -666,14 +674,6 @@ h2 a.in, h1 a.in {
   border: 1px solid #E5E5E5;
   margin: 0 0 -1px;
   padding: 8px 14px;
-}
-
-.product {
-  width: 140px;
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  vertical-align: top;
 }
 
 /*Misc CSS*/

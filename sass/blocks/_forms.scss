@@ -1,7 +1,7 @@
 //
 // Forms
 // --------------------------------------------------
-// <form class="form search">
+// <form class="form search || subscribe">
 //    <input class="text" type="text" title="искать на сайте" value="искать на сайте">
 //    <input class="btn" type="submit" value="Поиск">
 // </form>
@@ -22,7 +22,6 @@
     cursor: pointer;                 
     line-height: $baseLineHeight;      
     padding: 0.25em;      
-    font-size: $inputsFontSize;
-    @include border-radius($inputBorderRadius);    
+    font-size: $inputsFontSize;        
   }
 }
