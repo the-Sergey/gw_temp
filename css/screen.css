@@ -430,14 +430,14 @@ a.psevdo.dashed:hover span {
 .logo {
   margin: 7px 0 0 12px;
   float: left;
-  z-index: 200;
 }
 .logo h3 {
   position: absolute;
-  left: 394px;
+  left: 0;
   top: 38px;
   font-size: 18px;
   color: #282828;
+  white-space: nowrap;
 }
 
 #page-title {

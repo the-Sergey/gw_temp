@@ -1,3 +1,32 @@
-/* Welcome to Compass. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+// Import this file using the following HTML or equivalent:
+// <link href="/stylesheets/print.css" media="print" rel="stylesheet">
+
+/* Print Styles */
+
+body {
+	background: none;	
+	font: #{$baseFontSize}/#{$baseLineHeight} $baseFontFamily;
+	color: $baseTextColor;
+	font-size:10pt;
+}
+#wrapper {
+	background: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headingFontFamily;
+}
+code {
+	font:.9em "Courier New", Monaco, Courier, monospace;
+}
+a img {
+	border:none;
+}
+a:link, a:visited {
+	background: transparent;
+	font-weight: 700;
+	text-decoration: underline;
+}
+a:link:after, a:visited:after {
+	content:" (" attr(href) ")";
+	font-size:90%;
+}

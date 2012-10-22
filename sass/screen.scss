@@ -2,7 +2,7 @@
 @import "compass/css3";
 @import "compass/utilities/sprites";
 $sprited: sprite-map("sprite/*.png",
-		$bg-position: 100%, $bg-spacing:0, $bg-repeat: no-repeat);
+	$bg-position: 100%, $bg-spacing:0, $bg-repeat: no-repeat);
 
 /*Reset CSS*/
 @import "reset.scss";
@@ -23,13 +23,13 @@ $sprited: sprite-map("sprite/*.png",
 
 /*Blocks CSS*/
 @import "blocks/news.scss";
-@import "blocks/slider.scss";
 @import "blocks/forms.scss";
 @import "blocks/breadcrumbs.scss";
 @import "blocks/navs.scss";
 //@import "blocks/cat.scss";
 //@import "blocks/sprites.scss";
 //@import "blocks/pager.scss";
+//@import "blocks/plugins.scss";
 
 /*Misc CSS*/
 @import "misc.scss";
