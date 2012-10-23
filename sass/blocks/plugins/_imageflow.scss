@@ -57,7 +57,7 @@
 			height:1px;
 		}
 		.slider {
-			background:url("slider.png") no-repeat;
+			background:url("../images/imageflow/slider.png") no-repeat;
 			height:14px;
 			margin:-6px 0 0 -7px;
 			position:absolute;
@@ -73,10 +73,10 @@
 			z-index:10003;
 		}
 		.slideshow.pause {
-			background:url("button_pause.png") no-repeat;
+			background:url("../images/imageflow/button_pause.png") no-repeat;
 		}
 		.slideshow.play {
-			background:url("button_play.png") no-repeat;
+			background:url("../images/imageflow/utton_play.png") no-repeat;
 		}
 		.images {
 			overflow:hidden;
@@ -89,12 +89,12 @@
 			width:17px;
 		}
 		.previous {
-			background: url("button_left.png") top left no-repeat;
+			background: url("../images/imageflow/button_left.png") top left no-repeat;
 			float:left;
 			margin: -7px 0 0 -30px;
 		}
 		.next {
-			background: url("button_right.png") top left no-repeat;
+			background: url("../images/imageflow/button_right.png") top left no-repeat;
 			float:right;	
 			margin:-7px -30px 0 30px;
 		}

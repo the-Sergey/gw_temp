@@ -14,3 +14,20 @@ if (window.PIE) {
         PIE.attach(this);
     });
 };
+
+/* Create ImageFlow instances when the DOM structure has been loaded */
+domReady(function(){
+	var instanceOne = new ImageFlow();
+    instanceOne.init({
+        ImageFlowID:'myImageFlow',
+        aspectRatio: 3.0,
+        imageFocusM: 1.4,
+        imagesM: 1.2,
+        buttons: true,
+        reflections: false,
+        captions: false,
+        startID: 4,
+        circular: false,
+        imageFocusMax: 2
+    });
+});
