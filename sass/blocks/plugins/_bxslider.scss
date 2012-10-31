@@ -1,3 +1,8 @@
+// Apply your own controls
+// Change $bxSliderStyle variable with your own
+
+$bxSliderStyle: my;
+
 /*
  * To change the color scheme of slider change each 
  * background property for each of the five styles below
@@ -9,10 +14,10 @@
 	top:40%;
 	right:-50px;
 	z-index:999;
-	width: 30px;
-	height: 30px;
+	width: image-width("../images/bxslider/#{$bxSliderStyle}_next.png");
+	height: image-height("../images/bxslider/#{$bxSliderStyle}_next.png")/2;
 	text-indent: -999999px;
-	background: url("../images/bxslider/gray_next.png") no-repeat 0 -30px;
+	background: url("../images/bxslider/#{$bxSliderStyle}_next.png") no-repeat 0 -#{image-height("../images/bxslider/#{$bxSliderStyle}_next.png")/2};
 }
 
 /*previous button*/
@@ -21,10 +26,10 @@
 	top: 40%;
 	left: -50px;
 	z-index: 999;
-	width: 30px;
-	height: 30px;
+	width: image-width("../images/bxslider/#{$bxSliderStyle}_next.png");
+	height: image-height("../images/bxslider/#{$bxSliderStyle}_next.png")/2;
 	text-indent: -999999px;
-	background: url("../images/bxslider/gray_prev.png") no-repeat 0 -30px;
+	background: url("../images/bxslider/#{$bxSliderStyle}_prev.png") no-repeat 0 -#{image-height("../images/bxslider/#{$bxSliderStyle}_next.png")/2};
 }
 
 /*pager links*/
@@ -34,18 +39,18 @@
 	padding: 3px 8px 3px 6px;
 	font-size: 12px;
 	zoom: 1;
-	background: url("../images/bxslider/gray_pager.png") no-repeat 0 -20px;
+	background: url("../images/bxslider/#{$bxSliderStyle}_pager.png") no-repeat 0 -20px;
 }
 
 /*auto start button*/
 .bx-auto .start {
-	background: url("../images/bxslider/gray_auto.png") no-repeat 0 2px;
+	background: url("../images/bxslider/#{$bxSliderStyle}_auto.png") no-repeat 0 2px;
 	padding-left: 13px;
 }
 
 /*auto stop button*/
 .bx-auto .stop {
-	background: url("../images/bxslider/gray_auto.png") no-repeat 0 -14px;
+	background: url("../images/bxslider/#{$bxSliderStyle}_auto.png") no-repeat 0 -14px;
 	padding-left: 13px;
 }
 
