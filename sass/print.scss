@@ -3,6 +3,14 @@
 
 /* Print Styles */
 
+/*Reset CSS*/
+@import "reset.scss";
+
+// Core variables and mixins
+@import "constants.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
 body {
 	background: none;	
 	font: #{$baseFontSize}/#{$baseLineHeight} $baseFontFamily;
