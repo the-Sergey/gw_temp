@@ -50,7 +50,7 @@ hr {
 
 /* Header
 -----------------------------------------------------------------------------*/
-#header {
+header.main {
 	height: $headerHeight;
 	background: $headerBackground;
 }
@@ -107,7 +107,7 @@ hr {
 
 /* Footer
 -----------------------------------------------------------------------------*/
-#footer {
+footer {
 	@if $template == liquid {
 		max-width: $footerWidthMax;
     min-width: $footerWidthMin;
