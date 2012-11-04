@@ -36,7 +36,7 @@
 <body>
 
 <div id="wrapper">
-	<header class="main">
+	<header id="header">
 		<div class="inner">
 			<div class="row-top">
 				<div class="logo">
@@ -63,14 +63,24 @@
 			</div>
 		</div>				
 	</header><!-- #header-->
-	<div id="middle">
+	<section id="middle">
 		<div id="container">
 			<div id="content">
 				<strong>Content:</strong> Sed placerat accumsan ligula. Aliquam felis magna, congue quis, tempus eu, aliquam vitae, ante. Cras neque justo, ultrices at, rhoncus a, facilisis eget, nisl. Quisque vitae pede. Nam et augue. Sed a elit. Ut vel massa. Suspendisse nibh pede, ultrices vitae, ultrices nec, mollis non, nibh. In sit amet pede quis leo vulputate hendrerit. Cras laoreet leo et justo auctor condimentum. Integer id enim. Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero. Morbi tempor pulvinar pede. Donec vel elit.
-				<input type="date">	
+				<form>
+					<input type="text" name="name" placeholder="e.g. John Doe">
+					<input type="email" name="email" placeholder="e.g. address@example.ext">
+					<input type="url" name="url" placeholder="e.g. http://mathiasbynens.be/">
+					<input type="tel" name="tel" placeholder="e.g. +32 472 77 69 88">
+					<input type="password" name="password" placeholder="e.g. h4x0rpr00fz">
+					<input type="search" name="search" placeholder="Search this site…">
+					<input type="date" name="date">
+					<textarea name="message" placeholder="Your message goes here"></textarea>
+					<input type="submit" value="Send">	
+				</form>								
 			</div><!-- #content-->
 		</div><!-- #container-->
-		<div class="sidebar" id="side-left">
+		<aside id="side-left">
 			<nav>
 				<ul class="nav side">
 				    <li><a href="#">О нас</a></li>
@@ -81,13 +91,13 @@
 				</ul>
 			</nav>			
 			<strong>Left Sidebar:</strong> Integer velit. Vestibulum nisi nunc, accumsan ut, vehicula sit amet, porta a, mi. Nam nisl tellus, placerat eget, posuere eget, egestas eget, dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In elementum urna a eros. Integer iaculis. Maecenas vel elit.
-		</div><!-- .sidebar#sideLeft -->
-		<div class="sidebar" id="side-right">
+		</aside><!-- #sideLeft -->
+		<aside id="side-right">
 			<strong>Right Sidebar:</strong> Integer velit. Vestibulum nisi nunc, accumsan ut, vehicula sit amet, porta a, mi. Nam nisl tellus, placerat eget, posuere eget, egestas eget, dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In elementum urna a eros. Integer iaculis. Maecenas vel elit.
-		</div><!-- .sidebar#sideRight -->
-	</div><!-- #middle-->
+		</aside><!-- #sideRight -->
+	</section><!-- #middle-->
 </div><!-- #wrapper -->
-<footer>
+<footer id="footer">
 	<div id="footer-block">
 		<div class="row-top"></div>
 		<div class="row-middle"></div>
