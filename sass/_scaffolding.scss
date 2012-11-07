@@ -24,7 +24,7 @@ textarea {
 // Hr normalize
 
 hr {
-	clear: both;	
+	clear: both;
 	border: none;
 	width: 90%;
 	height: 1px;
@@ -34,18 +34,23 @@ hr {
 	text-align: center;
 }
 
-#wrapper {
-	@if $template == liquid {
-		max-width: $wrapperWidthMax;    	
-    min-width: $wrapperWidth;
-	} @else	if $template == fixed {
-		width: $wrapperWidth;
-	} @else {
-		@warn "Choose one of the templates";
-	}	
-	margin: 0 auto;
-	min-height: 100%;
-	height: auto !important;	
+// #wrapper {
+// 	@if $template == liquid {
+// 		max-width: $wrapperWidthMax;    	
+//     min-width: $wrapperWidth;
+// 	} @else	if $template == fixed {
+// 		width: $wrapperWidth;
+// 	} @else {
+// 		@warn "Choose one of the templates";
+// 	}	
+// 	margin: 0 auto;
+// 	min-height: 100%;
+// 	height: auto !important;	
+// }
+.inner {
+  margin: 0 auto;
+  position: relative;
+  width: $baseWidth;
 }
 
 /* Header
@@ -123,7 +128,7 @@ hr {
 }
 #footer-block {
 	margin: 0 auto;
-	width: $wrapperWidth;
+	width: $baseWidth;
 	height: 100%;
 	background: $footerBlockBackground;
 }

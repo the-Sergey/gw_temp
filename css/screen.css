@@ -245,11 +245,10 @@ hr {
   text-align: center;
 }
 
-#wrapper {
-  width: 1002px;
+.inner {
   margin: 0 auto;
-  min-height: 100%;
-  height: auto !important;
+  position: relative;
+  width: 1002px;
 }
 
 /* Header

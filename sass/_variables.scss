@@ -8,7 +8,7 @@ $template: fixed; // fixed || liquid // For other purposes use @media
 
 // Sizes
 // -------------------------
-$wrapperWidth:            1002px;
+$baseWidth:            	  1002px;
 $wrapperWidthMax:         1200px; // do not care if $template = fixed
 $headerHeight:            150px;
 $sideLeftWidth:           250px;
@@ -16,7 +16,7 @@ $sideRightWidth:          250px;
 $contentLeftPadding:      0;
 $contentRightPadding:     0;
 $footerWidth:             100%;
-$footerWidthMin:          $wrapperWidth; // do not care if $template = fixed
+$footerWidthMin:          $baseWidth; // do not care if $template = fixed
 $footerWidthMax:          $wrapperWidthMax; // do not care if $template = fixed
 $footerHeight:            100px;
 
