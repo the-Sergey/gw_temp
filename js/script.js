@@ -1,18 +1,22 @@
-$(document).ready(function(){
-    if (Modernizr.inputtypes.date) {
-        return true;
-    } else {
-        $('input[type=date]').datepicker({
+$(document).ready(function() {
+    if (!Modernizr.inputtypes.date) {
+       $('input[type=date]').datepicker({
             dateFormat: 'dd-mm-yy'
-        });        
-    }   
-    Modernizr.load({
-        test: Modernizr.input.required,
-        nope: 'js/libs/jquery.placeholder.min.js',
-        complete: function () {
+        });
+    };
+    if (!Modernizr.input.required) {
+        load('js/libs/jquery.placeholder.min.js'),
+        function() {
             $('input, textarea').placeholder();
         }
-    });
+    };
+    // Modernizr.load({
+    //     test: Modernizr.input.required,
+    //     nope: 'js/libs/jquery.placeholder.min.js',
+    //     complete: function () {
+    //         $('input, textarea').placeholder();
+    //     }
+    // });
     // if(!Modernizr.input.placeholder){
     //     $('[placeholder]').focus(function() {
     //         var input = $(this);
