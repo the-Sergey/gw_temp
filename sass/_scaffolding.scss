@@ -34,24 +34,23 @@ hr {
 	text-align: center;
 }
 
-// #wrapper {
-// 	@if $template == liquid {
-// 		max-width: $wrapperWidthMax;    	
-//     min-width: $wrapperWidth;
-// 	} @else	if $template == fixed {
-// 		width: $wrapperWidth;
-// 	} @else {
-// 		@warn "Choose one of the templates";
-// 	}	
-// 	margin: 0 auto;
-// 	min-height: 100%;
-// 	height: auto !important;	
-// }
-.inner {
-  margin: 0 auto;
-  position: relative;
-  width: $baseWidth;
+#wrapper {
+	@if $template == liquid {
+		max-width: $wrapperWidthMax;    	
+    min-width: $baseWidth;
+	} @else	if $template == fixed {
+		width: $baseWidth;
+	} @else {
+		@warn "Choose one of the templates";
+	}	
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;	
 }
+.container {
+	margin: 0 auto;
+	width: $baseWidth;
+} 
 
 /* Header
 -----------------------------------------------------------------------------*/
@@ -67,7 +66,7 @@ hr {
 		border-left: $sideLeftWidth solid $sideLeftBackground;
     border-right: $sideRightWidth solid $sideRightBackground;
 	} 	
-	width: 100%;
+	width: $baseWidth;
 	padding: 0 0 $footerHeight;
 	height: 1%;
 	position: relative;
