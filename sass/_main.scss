@@ -1,7 +1,7 @@
 // Main.scss
 
 // Row helpers
-#header {
+header.main {
   .row-top {height:50px;}
   .row-middle {height:50px;}
   .row-bottom {height:50px;}
@@ -37,8 +37,7 @@
   margin: 15px 0 0 0;
   padding: 0;  
 }
-
-#footer {
+footer.main {
   .row-top {height:0;}
   .row-middle {height:0;}
   .row-bottom {height:0;}

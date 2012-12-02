@@ -54,7 +54,7 @@ hr {
 
 /* Header
 -----------------------------------------------------------------------------*/
-#header {
+header.main {
 	height: $headerHeight;
 	background: $headerBackground;
 }
@@ -111,7 +111,7 @@ hr {
 
 /* Footer
 -----------------------------------------------------------------------------*/
-#footer {
+footer.main {
 	@if $template == liquid {
 		max-width: $footerWidthMax;
     min-width: $footerWidthMin;
@@ -124,10 +124,8 @@ hr {
 	height: $footerHeight;
 	background: $footerBackground;
 	position: relative;
-}
-#footer-block {
-	margin: 0 auto;
-	width: $baseWidth;
-	height: 100%;
-	background: $footerBlockBackground;
+	.container {
+		background: $footerBlockBackground;
+		height: 100%;
+	}
 }

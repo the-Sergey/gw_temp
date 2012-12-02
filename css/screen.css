@@ -259,7 +259,7 @@ hr {
 
 /* Header
 -----------------------------------------------------------------------------*/
-#header {
+header.main {
   height: 150px;
   background: #ffe680;
 }
@@ -313,19 +313,16 @@ hr {
 
 /* Footer
 -----------------------------------------------------------------------------*/
-#footer {
+footer.main {
   width: 100%;
   margin: -100px auto 0;
   height: 100px;
   background: #bff08e;
   position: relative;
 }
-
-#footer-block {
-  margin: 0 auto;
-  width: 1002px;
-  height: 100%;
+footer.main .container {
   background: #d8f5ba;
+  height: 100%;
 }
 
 /*Base CSS*/
@@ -436,13 +433,13 @@ a.psevdo.dashed:hover span {
   margin-right: 5px;
 }
 
-#header .row-top {
+header.main .row-top {
   height: 50px;
 }
-#header .row-middle {
+header.main .row-middle {
   height: 50px;
 }
-#header .row-bottom {
+header.main .row-bottom {
   height: 50px;
 }
 
@@ -482,13 +479,13 @@ a.psevdo.dashed:hover span {
   padding: 0;
 }
 
-#footer .row-top {
+footer.main .row-top {
   height: 0;
 }
-#footer .row-middle {
+footer.main .row-middle {
   height: 0;
 }
-#footer .row-bottom {
+footer.main .row-bottom {
   height: 0;
 }
 
