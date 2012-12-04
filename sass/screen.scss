@@ -5,31 +5,32 @@ $sprited: sprite-map("sprite/*.png",
 	$bg-position: 100%, $bg-spacing:0, $bg-repeat: no-repeat);
 
 /*Reset CSS*/
-@import "reset.scss";
+@import "reset";
 
 // Core variables and mixins
-@import "constants.scss";
-@import "variables.scss";
-@import "mixins.scss";
+@import "constants";
+@import "variables";
+@import "mixins";
 
 
 /*Scaffolding CSS*/
-@import "scaffolding.scss";
+@import "scaffolding";
+// @import "grid";
 
 /*Base CSS*/
-@import "type.scss";
-@import "main.scss";
-@import "forms.scss";
+@import "type";
+@import "main";
+@import "forms";
 
 /*Blocks CSS*/
-@import "blocks/news.scss";
-@import "blocks/forms.scss";
-@import "blocks/breadcrumbs.scss";
-@import "blocks/navs.scss";
-//@import "blocks/cat.scss";
-//@import "blocks/sprites.scss";
-//@import "blocks/pager.scss";
-//@import "blocks/plugins.scss";
+@import "blocks/news";
+@import "blocks/forms";
+@import "blocks/breadcrumbs";
+@import "blocks/navs";
+//@import "blocks/cat";
+//@import "blocks/sprites";
+//@import "blocks/pager";
+//@import "blocks/plugins";
 
 /*Misc CSS*/
-@import "misc.scss";
+@import "misc";

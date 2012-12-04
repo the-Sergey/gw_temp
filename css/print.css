@@ -22,16 +22,30 @@ video {
   *zoom: 1;
 }
 
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
 html {
-  height: 100%;
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
 body {
-  height: 100%;
-  width: 100%;
   margin: 0;
 }
 
@@ -42,14 +56,38 @@ a:active, a:hover {
   outline: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
 h6 {
-  margin-top: 0;
-  margin-bottom: 15px;
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
 }
 
 b,
@@ -65,9 +103,14 @@ dfn {
   font-style: italic;
 }
 
+mark {
+  background: #ff0;
+  color: #000;
+}
+
 p,
 pre {
-  margin: 0 0 1em;
+  margin: 1em 0;
 }
 
 code,
@@ -87,15 +130,17 @@ pre {
 
 q {
   quotes: none;
+  quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-q:before, q:after {
+q:before,
+q:after {
   content: '';
   content: none;
 }
 
 small {
-  font-size: 75%;
+  font-size: 80%;
 }
 
 sub,
@@ -131,9 +176,23 @@ ul {
   padding: 0 0 0 40px;
 }
 
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
 }
 
 form {
@@ -187,7 +246,9 @@ input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
   *height: 13px;
+  /* 3 */
   *width: 13px;
+  /* 3 */
 }
 
 input[type="search"] {

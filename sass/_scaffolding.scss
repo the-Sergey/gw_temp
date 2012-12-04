@@ -4,6 +4,10 @@
 
 /* Main
 -----------------------------------------------------------------------------*/
+html, body {
+	height: 100%;
+}
+
 body {
 	background: $bodyBackground;
 	font: #{$baseFontSize}/#{$baseLineHeight} $baseFontFamily;
@@ -37,9 +41,9 @@ hr {
 #wrapper {
 	@if $template == liquid {
 		max-width: $wrapperWidthMax;    	
-    min-width: $baseWidth;
+		min-width: $baseWidth;
 	} @else	if $template == fixed {
-		width: $baseWidth;
+		width: 100%;
 	} @else {
 		@warn "Choose one of the templates";
 	}	
@@ -50,6 +54,7 @@ hr {
 .container {
 	margin: 0 auto;
 	width: $baseWidth;
+	height: 100%;
 } 
 
 /* Header
@@ -64,7 +69,7 @@ header.main {
 #middle {
 	@if $template == Equal {
 		border-left: $sideLeftWidth solid $sideLeftBackground;
-    border-right: $sideRightWidth solid $sideRightBackground;
+		border-right: $sideRightWidth solid $sideRightBackground;
 	} 	
 	width: $baseWidth;
 	padding: 0 0 $footerHeight;
@@ -114,7 +119,7 @@ header.main {
 footer.main {
 	@if $template == liquid {
 		max-width: $footerWidthMax;
-    min-width: $footerWidthMin;
+		min-width: $footerWidthMin;
 	} @else if $template == fixed {
 		width: $footerWidth;
 	}	@else {
@@ -126,6 +131,5 @@ footer.main {
 	position: relative;
 	.container {
 		background: $footerBlockBackground;
-		height: 100%;
 	}
 }
