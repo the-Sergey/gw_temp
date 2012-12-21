@@ -664,15 +664,23 @@ h2 a.in, h1 a.in {
 }
 .breadcrumbs li {
   display: inline-block;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  *vertical-align: auto;
+  zoom: 1;
   *display: inline;
-  *zoom: 1;
 }
 .breadcrumbs li a {
   color: #049cdb;
   line-height: 18px;
 }
-.breadcrumbs li span {
-  padding: 0 5px;
+.breadcrumbs li:before {
+  color: #049cdb;
+  content: "/";
+}
+.breadcrumbs li:first-child:before {
+  content: " ";
 }
 
 .nav {

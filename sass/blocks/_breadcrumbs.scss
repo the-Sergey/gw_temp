@@ -15,13 +15,17 @@
   padding: 8px 10px;
   li {
     display: inline-block;
-    @include ie7-inline-block;
+    @include inline-block(top);
     a {
       color: $linkColor;
       line-height: $baseLineHeight;      
+    }    
+    &:before {
+      color: $linkColor;
+      content: "/";
     }
-    span {
-      padding: 0 5px;
+    &:first-child:before {
+      content: " ";
     }
   }  
 }

@@ -1,0 +1,52 @@
+//
+// Page navigation
+// --------------------------------------------------
+// <ul class="pagination">
+// 	<li class="arrow unavailable"><a href="">&laquo;</a></li>
+// 	<li class="current"><a href="">1</a></li>
+// 	<li><a href="">2</a></li>
+// 	<li><a href="">3</a></li>
+// 	<li><a href="">4</a></li>
+// 	<li class="unavailable"><a href="">&hellip;</a></li>
+// 	<li><a href="">12</a></li>
+// 	<li><a href="">13</a></li>
+// 	<li class="arrow"><a href="">&raquo;</a></li>
+// </ul>
+// --------------------------------------------------
+.pagination {
+	display: block;
+	height: 24px;
+	margin-left: -5px;
+	li {
+		float: left;
+		display: block;
+		height: 24px;
+		color: #999;
+		font-size: 14px;
+		margin-left: 5px;
+		a {
+			display: block;
+			padding: 1px 7px 1px;
+			color: #555;
+		}
+	}
+}
+.pagination li:hover a, ul.pagination li a:focus {
+	background: #e6e6e6;
+}
+.pagination li.unavailable a {
+	cursor: default;
+	color: #999;
+}
+.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
+	background: transparent;
+}
+.pagination li.current a {
+	background: #2ba6cb;
+	color: white;
+	font-weight: bold;
+	cursor: default;
+}
+.pagination li.current a:hover, ul.pagination li.current a:focus {
+	background: #2ba6cb;
+}
