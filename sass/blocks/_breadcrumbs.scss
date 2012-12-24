@@ -16,9 +16,13 @@
   li {
     display: inline-block;
     @include inline-block(top);
+    padding-right: 10px;   
     a {
       color: $linkColor;
       line-height: $baseLineHeight;      
+    }
+    a, span {
+      padding-left: 10px;
     }    
     &:before {
       color: $linkColor;

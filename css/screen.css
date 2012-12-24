@@ -670,10 +670,14 @@ h2 a.in, h1 a.in {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
+  padding-right: 10px;
 }
 .breadcrumbs li a {
   color: #049cdb;
   line-height: 18px;
+}
+.breadcrumbs li a, .breadcrumbs li span {
+  padding-left: 10px;
 }
 .breadcrumbs li:before {
   color: #049cdb;
@@ -689,9 +693,12 @@ h2 a.in, h1 a.in {
   margin: 0;
 }
 .nav li {
+  display: -moz-inline-stack;
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
   *display: inline;
-  *zoom: 1;
 }
 
 .nav.main {
@@ -710,7 +717,6 @@ h2 a.in, h1 a.in {
 }
 .nav.main > li > a {
   color: #049cdb;
-  display: inline-block;
   font-size: 14px;
   padding: 10px 15px;
   text-transform: uppercase;
@@ -764,6 +770,66 @@ h2 a.in, h1 a.in {
   border: 1px solid #E5E5E5;
   margin: 0 0 -1px;
   padding: 8px 14px;
+}
+
+.item.cat {
+  width: 140px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  vertical-align: text-top;
+  line-height: 14px;
+  margin-top: 1px;
+}
+
+.pagination {
+  padding: 8px 10px;
+  margin-left: -5px;
+}
+.pagination li {
+  float: left;
+  display: block;
+  height: 24px;
+  color: #999;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.pagination li a {
+  display: block;
+  padding: 1px 7px 1px;
+  color: #555;
+}
+
+.pagination li:hover a, ul.pagination li a:focus {
+  background: #e6e6e6;
+}
+
+.pagination li.unavailable a {
+  cursor: default;
+  color: #999;
+}
+
+.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
+  background: transparent;
+}
+
+.pagination li.current a {
+  background: #2ba6cb;
+  color: white;
+  font-weight: bold;
+  cursor: default;
+}
+
+.pagination li.current a:hover, ul.pagination li.current a:focus {
+  background: #2ba6cb;
 }
 
 /*Misc CSS*/
