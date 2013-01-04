@@ -1,14 +1,14 @@
 // Main.scss
 
 // Row helpers
-header.main {
+header {
   .row-top {height:50px;}
   .row-middle {height:50px;}
   .row-bottom {height:50px;}
 }
 .logo {
   margin: 7px 0 0 12px;  
-  float: left;   
+  float: left;  
   h3 {  	
   	position: absolute;
   	left: 0;
@@ -18,13 +18,13 @@ header.main {
     white-space: nowrap;  	
   }
 }
-#page-title {
-  color: $headingColor;    
-  font-size: 18px;
-  font-weight: $headingFontWeight;
-  font-family: $headingFontFamily;
-  margin: 10px 25px;          
-}
+// #page-title {
+//   color: $headingColor;    
+//   font-size: 18px;
+//   font-weight: $headingFontWeight;
+//   font-family: $headingFontFamily;
+//   margin: 10px 25px;          
+// }
 .copyright {
   float: left;  
   margin: 5px 0 0 0;       
@@ -37,7 +37,7 @@ header.main {
   margin: 15px 0 0 0;
   padding: 0;  
 }
-footer.main {
+footer {
   .row-top {height:0;}
   .row-middle {height:0;}
   .row-bottom {height:0;}

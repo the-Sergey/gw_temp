@@ -11,7 +11,7 @@ html, body {
 body {
 	background: $bodyBackground;
 	font: #{$baseFontSize}/#{$baseLineHeight} $baseFontFamily;
-	color: $baseTextColor;
+	color: $textColor;
 }
 
 // Addresses `font-family` inconsistency between `textarea` and other form
@@ -22,7 +22,7 @@ button,
 input,
 select,
 textarea {
-	font: $inputsFontSize $inputsFontFamily;
+	font: $baseFontSize $baseFontFamily;
 }
 
 // Hr normalize
@@ -32,8 +32,8 @@ hr {
 	border: none;
 	width: 90%;
 	height: 1px;
-	background: $hrColor;
-	color: $hrColor;
+	background: $hrBorder;
+	color: $hrBorder;
 	margin: 1em auto 1em;
 	text-align: center;
 }
@@ -59,7 +59,7 @@ hr {
 
 /* Header
 -----------------------------------------------------------------------------*/
-header.main {
+header {
 	height: $headerHeight;
 	background: $headerBackground;
 }
@@ -116,7 +116,7 @@ header.main {
 
 /* Footer
 -----------------------------------------------------------------------------*/
-footer.main {
+footer {
 	@if $template == liquid {
 		max-width: $footerWidthMax;
 		min-width: $footerWidthMin;

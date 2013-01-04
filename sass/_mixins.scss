@@ -1,4 +1,9 @@
 // Bacground and size
 @mixin bg($name) {
-	width: image-width("sprite/#{$name}.png"); height: image-height("sprite/#{$name}.png"); background: sprite($sprited, $name);
+	background: sprite($sprited, $name);
+	width: image-width("sprite/#{$name}.png");
+	height: image-height("sprite/#{$name}.png");
+}
+@function calc-percent($target, $container: $baseWidth) {
+  @return ($target / $container) * 100%;
 }

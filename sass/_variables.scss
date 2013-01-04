@@ -1,6 +1,3 @@
-// Scaffolding ---------------------------------------------------------------------------------
-// -------------------------
-
 // Template type
 // -------------------------
 $template: fixed; // fixed || liquid // For other purposes use @media
@@ -22,7 +19,7 @@ $footerHeight:            100px;
 
 // Backgrounds
 // -------------------------
-$bodyBackground:          $white;
+$bodyBackground:          #fff;
 $headerBackground:        #ffe680;
 $middleBackground:        null;
 $containerBackground:     null;
@@ -30,34 +27,3 @@ $sideLeftBackground:      #b5e3ff;
 $sideRightBackground:     #ffacaa;
 $footerBackground:        #bff08e;
 $footerBlockBackground:   #d8f5ba;
-$hrColor:                 $grayLight;
-
-// Links
-// -------------------------
-$linkColor:               $blue;
-$linkColorVisited:        $red;
-$linkColorHover:          null;
-$linkFontFamily:          $sansFontFamily;
-
-
-// Typography ---------------------------------------------------------------------------------
-// -------------------------
-$baseFontSize:            12px;
-$baseFontFamily:          $sansFontFamily;
-$baseLineHeight:          18px;
-$baseTextColor:           $grayDark;
-$altFontFamily:           $serifFontFamily;
-
-
-// Forms
-// -------------------------
-$inputBackground:         $white;
-$inputBorder:             #ccc;
-$inputBorderRadius:       null;
-$inputsFontFamily:        $baseFontFamily;
-$inputsFontSize:          $baseFontSize;
-
-$headingFontFamily:      inherit; // empty to use BS default, $baseFontFamily
-$headingFontWeight:      bold;    // instead of browser default, bold
-$headingColor:           inherit; // empty to use BS default, $textColor
-$headingTextTransform:   uppercase;

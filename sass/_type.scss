@@ -20,7 +20,7 @@ h5 {font-size: 12px;}
 h6 {font-size: 11px; color: $grayLight; text-transform: uppercase;}
 
 // Links
-a {color:$linkColor; text-decoration:underline; font-family:$linkFontFamily;
+a {color:$linkColor; font-family:$linkFontFamily;
   &:visited {color:$linkColorVisited;}
   &:hover {text-decoration:none;}
 }
