@@ -1,12 +1,11 @@
 // Helpers
-@import "compass/css3";
-@import "compass/utilities/sprites";
-$sprited: sprite-map("sprite/*.png",
-	$bg-position: 100%, $bg-spacing:0, $bg-repeat: no-repeat);
+// @import "compass/css3";
+// @import "compass/utilities/sprites";
+// $sprited: sprite-map("sprite/*.png",
+// 	$bg-position: 100%, $bg-spacing:0, $bg-repeat: no-repeat);
 
-@import "variables_bootstrap";
-@import "bootstrap";
-// @import "bootstrap-responsive";
+@import "bootstrap/bootstrap";
+// @import "bootstrap/bootstrap-responsive";
 
 @import "mixins";
 @import "variables";
