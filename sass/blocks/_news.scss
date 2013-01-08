@@ -1,23 +1,24 @@
 //
 // News
 // --------------------------------------------------
-// <div class="news_block">
+// <div class="news-block">
 //     <h3>Новости<a class="in" href="#">все новости</a></h3>
-//     <div class="list_nwes">
-//         <div class="news_box">
+//     <div class="list-news">
+//         <div class="news-box">
 //             <span>12 марта 2012</span>
-//             <div>Текст анонса</div>                       
+//             <div class="news-desc">Текст анонса</div>                       
 //             <a href="#">подробнее</a>
 //         </div>
-//         <div class="news_box">
+//         <div class="news-box">
 //             <span>12 марта 2012</span>
-//             <div>Текст анонса</div>                      
+//             <div class="news-desc">Текст анонса</div>                      
 //             <a href="#">подробнее</a>
 //         </div>
 //     </div>              
 // </div>
 // --------------------------------------------------
-.news_block {    
+.news-block {
+  clear:both;
   margin: 6px 0 0;    
   width: 280px;
   h3 {
@@ -31,9 +32,9 @@
       text-transform: none;
     }
   }
-  .list_nwes {
+  .list-nwes {
     padding: 0;
-    .news_box {
+    .news-box {
       background: none no-repeat scroll 0 0 #f4f4f4;
       margin-bottom: 30px;
       padding: 15px 0;
@@ -44,8 +45,10 @@
         font-size: 14px; 
         margin: 0 0 5px 0;       
       }    
-      div {
-        margin: 5px 0;        
+      div.news-desc {
+      	line-height: 18px;
+    		color: #6A6A6A;
+    		margin: 0 0 5px 0;
       }
       a {
         color: #0e236f;
@@ -56,11 +59,11 @@
     }
   }
 }
-h2 a.in, h1 a.in {
+h3 a.in, h2 a.in, h1 a.in {
   display: inline-block;
-  font-family: Trebuchet MS,sans-serif;
+  font-family: Arial, Tahoma, San-serif;
   font-size: 12px;
-  font-style: italic;
+  font-style: normal;
   margin-left: 10px;
   text-transform: none;
   word-spacing: normal;
